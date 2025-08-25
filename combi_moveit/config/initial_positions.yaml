@@ -1,0 +1,21 @@
+# Default initial positions for nova2_robot's ros2_control fake system
+
+initial_positions:
+  joint1: 0
+  joint2: 0
+  joint3: 0
+  joint4: 0
+  joint5: 0
+  joint6: 0
+  dg3f_F1M1: 0
+  dg3f_F1M2: 0
+  dg3f_F1M3: 0
+  dg3f_F1M4: 0
+  dg3f_F2M1: 0
+  dg3f_F2M2: 0
+  dg3f_F2M3: 0
+  dg3f_F2M4: 0
+  dg3f_F3M1: 0
+  dg3f_F3M2: 0
+  dg3f_F3M3: 0
+  dg3f_F3M4: 0

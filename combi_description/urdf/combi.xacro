@@ -1,0 +1,29 @@
+<!-- nova2_with_delto.xacro -->
+<?xml version="1.0"?>
+<robot name="combi" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- 런치/커맨드라인에서 덮어쓸 인자들 -->
+  <xacro:arg name="parent_link" default="Link6"/>   <!-- 또는 tool0 등 실 엔드플랜지명 -->
+  <xacro:arg name="mount_xyz"  default="0 0 0"/>
+  <xacro:arg name="mount_rpy"  default="0 0 0"/>
+  <xacro:arg name="gr_prefix"  default="dgef_"/>
+
+  <!-- 로봇팔 + 그리퍼 매크로 include -->
+  <!-- ROS2 권장: $(find-pkg-share pkg) -->
+  <xacro:include filename="$(find-pkg-share combi_description)/urdf/nova2_robot.xacro"/>
+  <xacro:include filename="$(find-pkg-share combi_description)/urdf/delto_gripper_3f.xacro"/>
+
+  <!-- 본체 인스턴스 (매크로 호출) -->
+  <xacro:nova2_robot/>
+
+  <!-- 그리퍼 인스턴스 (접두사로 링크/조인트 이름 충돌 방지) -->
+  <xacro:delto_gripper_3f prefix:="$(arg gr_prefix)"/>
+
+  <!-- 연결 조인트 (엔드플랜지 ↔ 그리퍼 베이스) -->
+  <joint name="nova2_to_delto" type="fixed">
+    <origin xyz="$(arg mount_xyz)" rpy="$(arg mount_rpy)"/>
+    <parent link="$(arg parent_link)"/>
+    <child  link="$(arg gr_prefix)delto_base_link"/>
+  </joint>
+
+</robot>

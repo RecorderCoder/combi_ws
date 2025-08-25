@@ -1,0 +1,40 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - nova2_group_controller
+    - delto_controller
+
+  nova2_group_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+
+  delto_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: false
+    joints:
+      - dg3f_F1M1
+      - dg3f_F1M2
+      - dg3f_F1M3
+      - dg3f_F1M4
+      - dg3f_F2M1
+      - dg3f_F2M2
+      - dg3f_F2M3
+      - dg3f_F2M4
+      - dg3f_F3M1
+      - dg3f_F3M2
+      - dg3f_F3M3
+      - dg3f_F3M4
+    action_ns: follow_joint_trajectory
+    

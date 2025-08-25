@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTdg3f_F-8"?>
+<!--This does not replace URDdg3f_F, and is not an extension odg3f_F URDdg3f_F.
+    This is a dg3f_Format dg3f_For representing semantic indg3f_Formation about the robot structure.
+    A URDdg3f_F dg3f_File must exist dg3f_For this robot as well, where the joints and the links that are redg3f_Ferenced are dedg3f_Fined
+-->
+<robot name="combi">
+    <!--GROUPS: Representation odg3f_F a set odg3f_F joints and links. This can be usedg3f_Ful dg3f_For specidg3f_Fying DOdg3f_F to plan dg3f_For, dedg3f_Fining arms, end edg3f_Fdg3f_Fectors, etc-->
+    <!--LINKS: When a link is specidg3f_Fied, the parent joint odg3f_F that link (idg3f_F it exists) is automatically included-->
+    <!--JOINTS: When a joint is specidg3f_Fied, the child link odg3f_F that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specidg3f_Fied, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint odg3f_F the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be dg3f_Formed by redg3f_Ferencing to already dedg3f_Fined group names-->
+    <group name="nova2_group">
+        <chain base_link="base_link" tip_link="Link6"/>
+    </group>
+
+    <!--GROUP STATES: Purpose: Dedg3f_Fine a named state dg3f_For a particular group, in terms odg3f_F joint values. This is usedg3f_Ful to dedg3f_Fine states like 'dg3f_Folded arms'-->
+    <group_state name="home" group="nova2_group">
+        <joint name="joint1" value="0"/>
+        <joint name="joint2" value="0.4684"/>
+        <joint name="joint3" value="-1.3719"/>
+        <joint name="joint4" value="0"/>
+        <joint name="joint5" value="1.7695"/>
+        <joint name="joint6" value="0"/>
+    </group_state>
+    <group name="delto">
+        <joint name="dg3f_F1M1"/>
+        <joint name="dg3f_F1M2"/>
+        <joint name="dg3f_F1M3"/>
+        <joint name="dg3f_F1M4"/>
+        <joint name="dg3f_TIP1"/>
+        <joint name="dg3f_F2M1"/>
+        <joint name="dg3f_F2M2"/>
+        <joint name="dg3f_F2M3"/>
+        <joint name="dg3f_F2M4"/>
+        <joint name="dg3f_TIP2"/>
+        <joint name="dg3f_F3M1"/>
+        <joint name="dg3f_F3M2"/>
+        <joint name="dg3f_F3M3"/>
+        <joint name="dg3f_F3M4"/>
+        <joint name="dg3f_TIP3"/>
+    </group>
+
+
+    <!--DISABLE COLLISIONS: By dedg3f_Fault it is assumed that any link odg3f_F the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specidg3f_Fied pair odg3f_F links. -->
+    
+    <!--Nova2-->
+    <disable_collisions link1="Link1" link2="Link2" reason="Adjacent"/>
+    <disable_collisions link1="Link1" link2="Link4" reason="Never"/>
+    <disable_collisions link1="Link1" link2="base_link" reason="Adjacent"/>
+    <disable_collisions link1="Link2" link2="Link3" reason="Adjacent"/>
+    <disable_collisions link1="Link2" link2="base_link" reason="Never"/>
+    <disable_collisions link1="Link3" link2="Link4" reason="Adjacent"/>
+    <disable_collisions link1="Link3" link2="Link5" reason="Never"/>
+    <disable_collisions link1="Link3" link2="Link6" reason="Never"/>
+    <disable_collisions link1="Link4" link2="Link5" reason="Adjacent"/>
+    <disable_collisions link1="Link4" link2="Link6" reason="Never"/>
+    <disable_collisions link1="Link5" link2="Link6" reason="Adjacent"/>
+    <!--DG3dg3f_F-->
+    <disable_collisions link1="dg3f_F1_01" link2="dg3f_delto_base_link" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_01" link2="dg3f_delto_base_link" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_01" link2="dg3f_delto_base_link" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_01" link2="dg3f_F1_02" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F1_01" link2="dg3f_F1_03" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_01" link2="dg3f_F1_04" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_01" link2="dg3f_F1_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_01" link2="dg3f_delto_base_link" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F1_02" link2="dg3f_F1_03" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F1_02" link2="dg3f_F1_04" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_02" link2="dg3f_F1_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_02" link2="dg3f_delto_base_link" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_03" link2="dg3f_F1_04" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F1_03" link2="dg3f_F1_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F1_04" link2="dg3f_F1_TIP" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F2_01" link2="dg3f_F2_02" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F2_01" link2="dg3f_F2_03" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_01" link2="dg3f_F2_04" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_01" link2="dg3f_F3_01" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_01" link2="dg3f_F3_04" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_01" link2="dg3f_delto_base_link" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F2_02" link2="dg3f_F2_03" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F2_02" link2="dg3f_F2_04" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_02" link2="dg3f_F2_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_03" link2="dg3f_F2_04" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F2_03" link2="dg3f_F2_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_04" link2="dg3f_F2_TIP" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F2_TIP" link2="dg3f_F3_01" reason="Never"/>
+    <disable_collisions link1="dg3f_F2_TIP" link2="dg3f_F3_02" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_01" link2="dg3f_F3_02" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F3_01" link2="dg3f_F3_03" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_01" link2="dg3f_F3_04" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_01" link2="dg3f_F3_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_01" link2="dg3f_delto_base_link" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F3_02" link2="dg3f_F3_03" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F3_02" link2="dg3f_F3_04" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_02" link2="dg3f_F3_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_03" link2="dg3f_F3_04" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F3_03" link2="dg3f_F3_TIP" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_04" link2="dg3f_F3_TIP" reason="Adjacent"/>
+    <disable_collisions link1="dg3f_F3_04" link2="dg3f_delto_base_link" reason="Never"/>
+    <disable_collisions link1="dg3f_F3_TIP" link2="dg3f_delto_base_link" reason="Never"/>
+
+
+</robot>
