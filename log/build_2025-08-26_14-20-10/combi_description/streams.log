@@ -1,0 +1,58 @@
+[0.018s] Invoking command in '/home/golf/combi_ws/build/combi_description': CMAKE_PREFIX_PATH=/home/golf/combi_ws/install:/opt/ros/humble:/home/golf/ws_nova2_delto/install /usr/bin/cmake /home/golf/combi_ws/src/combi_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/golf/combi_ws/install
+[0.222s] -- The C compiler identification is GNU 11.4.0
+[0.395s] -- The CXX compiler identification is GNU 11.4.0
+[0.419s] -- Detecting C compiler ABI info
+[0.576s] -- Detecting C compiler ABI info - done
+[0.601s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.603s] -- Detecting C compile features
+[0.605s] -- Detecting C compile features - done
+[0.617s] -- Detecting CXX compiler ABI info
+[0.846s] -- Detecting CXX compiler ABI info - done
+[0.858s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.858s] -- Detecting CXX compile features
+[0.859s] -- Detecting CXX compile features - done
+[0.875s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.228s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.388s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.621s] -- Configuring done
+[1.632s] -- Generating done
+[1.638s] -- Build files have been written to: /home/golf/combi_ws/build/combi_description
+[1.654s] Invoked command in '/home/golf/combi_ws/build/combi_description' returned '0': CMAKE_PREFIX_PATH=/home/golf/combi_ws/install:/opt/ros/humble:/home/golf/ws_nova2_delto/install /usr/bin/cmake /home/golf/combi_ws/src/combi_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/golf/combi_ws/install
+[1.659s] Invoking command in '/home/golf/combi_ws/build/combi_description': CMAKE_PREFIX_PATH=/home/golf/combi_ws/install:/opt/ros/humble:/home/golf/ws_nova2_delto/install /usr/bin/cmake --build /home/golf/combi_ws/build/combi_description -- -j6 -l6
+[1.748s] Invoked command in '/home/golf/combi_ws/build/combi_description' returned '0': CMAKE_PREFIX_PATH=/home/golf/combi_ws/install:/opt/ros/humble:/home/golf/ws_nova2_delto/install /usr/bin/cmake --build /home/golf/combi_ws/build/combi_description -- -j6 -l6
+[1.774s] Invoking command in '/home/golf/combi_ws/build/combi_description': CMAKE_PREFIX_PATH=/home/golf/combi_ws/install:/opt/ros/humble:/home/golf/ws_nova2_delto/install /usr/bin/cmake --install /home/golf/combi_ws/build/combi_description
+[1.792s] -- Install configuration: ""
+[1.793s] -- Execute custom install script
+[1.795s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/urdf/combi.xacro
+[1.815s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/urdf/delto_gripper_3f.xacro
+[1.836s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/urdf/nova2_robot.xacro
+[1.859s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/delto_base_link.stl
+[1.880s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_01.stl
+[1.901s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_02.stl
+[1.922s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_03.stl
+[1.942s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_04.stl
+[1.961s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_tip_high.stl
+[1.981s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/mount.STL
+[2.003s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link1.STL
+[2.023s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link2.STL
+[2.043s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link3.STL
+[2.062s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link4.STL
+[2.083s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link5.STL
+[2.104s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link6.STL
+[2.124s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/base_link.STL
+[2.147s] -- Symlinking: /home/golf/combi_ws/install/share/ament_index/resource_index/package_run_dependencies/combi_description
+[2.168s] -- Symlinking: /home/golf/combi_ws/install/share/ament_index/resource_index/parent_prefix_path/combi_description
+[2.190s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/ament_prefix_path.sh
+[2.212s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/ament_prefix_path.dsv
+[2.235s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/path.sh
+[2.259s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/path.dsv
+[2.279s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.bash
+[2.302s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.sh
+[2.322s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.zsh
+[2.343s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.dsv
+[2.362s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/package.dsv
+[2.382s] -- Symlinking: /home/golf/combi_ws/install/share/ament_index/resource_index/packages/combi_description
+[2.402s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/cmake/combi_descriptionConfig.cmake
+[2.423s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/cmake/combi_descriptionConfig-version.cmake
+[2.443s] -- Symlinking: /home/golf/combi_ws/install/share/combi_description/package.xml
+[2.468s] Invoked command in '/home/golf/combi_ws/build/combi_description' returned '0': CMAKE_PREFIX_PATH=/home/golf/combi_ws/install:/opt/ros/humble:/home/golf/ws_nova2_delto/install /usr/bin/cmake --install /home/golf/combi_ws/build/combi_description

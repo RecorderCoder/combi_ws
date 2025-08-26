@@ -1,0 +1,48 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    nova2_group_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    delto_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+nova2_group_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+delto_controller:
+  ros__parameters:
+    joints:
+      - dg3f_F1M1
+      - dg3f_F1M2
+      - dg3f_F1M3
+      - dg3f_F1M4
+      - dg3f_F2M1
+      - dg3f_F2M2
+      - dg3f_F2M3
+      - dg3f_F2M4
+      - dg3f_F3M1
+      - dg3f_F3M2
+      - dg3f_F3M3
+      - dg3f_F3M4
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position

@@ -1,0 +1,1 @@
+/home/golf/combi_ws/build/combi_description/ament_cmake_environment_hooks/local_setup.bash

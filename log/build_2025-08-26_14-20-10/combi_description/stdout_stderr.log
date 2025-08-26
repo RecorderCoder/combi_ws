@@ -1,0 +1,52 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/golf/combi_ws/build/combi_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/urdf/combi.xacro
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/urdf/delto_gripper_3f.xacro
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/urdf/nova2_robot.xacro
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/delto_base_link.stl
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_01.stl
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_02.stl
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_03.stl
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_04.stl
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/link_tip_high.stl
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/DG3F/mount.STL
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link1.STL
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link2.STL
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link3.STL
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link4.STL
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link5.STL
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/Link6.STL
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/meshes/nova2/base_link.STL
+-- Symlinking: /home/golf/combi_ws/install/share/ament_index/resource_index/package_run_dependencies/combi_description
+-- Symlinking: /home/golf/combi_ws/install/share/ament_index/resource_index/parent_prefix_path/combi_description
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/path.sh
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/environment/path.dsv
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.bash
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.sh
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.zsh
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/local_setup.dsv
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/package.dsv
+-- Symlinking: /home/golf/combi_ws/install/share/ament_index/resource_index/packages/combi_description
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/cmake/combi_descriptionConfig.cmake
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/cmake/combi_descriptionConfig-version.cmake
+-- Symlinking: /home/golf/combi_ws/install/share/combi_description/package.xml
